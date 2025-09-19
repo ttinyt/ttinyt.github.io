@@ -9,23 +9,65 @@
 }
 
 .cover {
+    position: relative;
     width: 30em;
     height: 45em;
     background: #FFF6F6;
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+    padding:20px;
+}
+
+.cover:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.25);
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.cover .page{
+    padding: 20px;
 }
 
 .heading {
     padding: 3px 5px 3px 3px;
-    border-top-left-radius: 8px;
-    border-top-right-radius: 7px;
     font-size: 30px;
-    text-shadow: 1px 1px #ffffff;
     height: 30px;
-    box-shadow: white 0 1px 1px 1px inset;
     color: #181117;
     font-weight: normal;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: Roboto system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
+.navigation-arrow {
+    position: absolute;
+    bottom: 20px;
+    width: 26em;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1px 2px;
+}
+.navigation-arrow .list-items {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+/* Text */
+.text {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px;
+    color: #000000;
+    line-height: 1.6;
+    text-align: left;
+    padding: 10px 15px 10px 15px;
+}
+
+
+/* Links */
+
+.link {
+    text-decoration: pink;
+    color: #000000;
+}
+
+/* Change color on hover */
 
