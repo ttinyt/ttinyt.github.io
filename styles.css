@@ -1,0 +1,15 @@
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #ffffff;
+}
+
+.cover {
+    width: 45%;
+    height: 80%;
+    background: #FFF6F6;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+}
