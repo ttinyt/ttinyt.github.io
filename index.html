@@ -6,8 +6,10 @@
         <title>tini's page</title>
     </head>
     <body>
-        <div class="container">
-            <div class="cover">
+        <!--magazine-->
+        <div class="magazine">
+            <!--cover-->
+            <div id="cover">
                 <div class="heading">
                     <h1>Tini <br />Ngo<br />Le</h1>
                 </div>
@@ -19,6 +21,19 @@
                     </ul>
                 </nav>
             </div>
+
+            <!--page 2-->
+            <div><span class="text">Page 1</span></div>
+
+            <div><span class="text">Page 2</span></div>
+
+            <div><span class="text">Page 3</span></div>
         </div>
+
+        <script src="jquery.js"></script>
+        <script src="turn.js"></script>
+        <script>
+            $('.magazine').turn();
+        </script>
     </body>
 </html>
