@@ -1,50 +1,101 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: Roboto system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
 
-.container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+body { /*magazine centering*/
+    display: grid;
+    /* justify-content: center;
+    align-items: center; */
+    place-content: center;
     height: 100vh;
+    width: 100vw;
     margin-top: 5px;
+    overflow:hidden;
     background: transparent;
 }
 
-.cover {
+.magazine {
+    /* display: flex;
+    margin: auto; */
+    width: 60em;
+    height: 45em;
+    /*1* let pointer event go trough pages of lower Z than .magazine*/
+}
+
+/* .magazine .turn-page{
+    background-color: #ccc;
+} */
+
+.magazine #cover {
     position: relative;
     width: 30em;
     height: 45em;
-    background: #FFF6F6;
-    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
-    padding:20px;
+    background: #FFF6F6 !important;
+    border: 1px solid #f7f7f7;
 }
 
-.cover:hover {
-    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.25);
-    transition: 0.3s;
-    cursor: pointer;
-}
-
-.cover .page{
+.magazine .page .padd {
     padding: 20px;
 }
+
+/* 
+.magazine #cover :hover {
+    box-shadow: 0 8px 16px 10px rgba(0, 0, 0, 0.25);
+    transition: box-shadow 0.3s ease;
+    cursor: pointer;
+}  */
+
+
+
+/* pages */
+
+.magazine .page {
+    --thickness: 2;
+    display: flex;
+    /* flex-direction: column;
+    justify-content: center;
+    align-items: center; */
+    width: 30em;
+    height: 45em;
+    /* width: 100%; */
+    gap: 0;
+    border: 1px solid #e5e5e5;
+    background:#FFF;
+}
+
+.magazine .shadow,
+.magazine.shadow {
+    -webkit-box-shadow: 0 4px 10px #cccccc;
+    -moz-box-shadow: 0 4px 10px #cccccc;
+    -ms-box-shadow: 0 4px 10px #cccccc;
+    -o-box-shadow: 0 4px 10px #cccccc;
+    box-shadow: 0 4px 10px #cccccc;
+}
+/* 666 original color, 8c8c8c,  */
 
 .heading {
     padding: 3px 5px 3px 3px;
     font-size: 30px;
     height: 30px;
-    color: #181117;
+    /* color: #181117; */
     font-weight: normal;
     font-family: Roboto system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-.navigation-arrow {
+.navigation {
     position: absolute;
     bottom: 20px;
     width: 26em;
     justify-content: space-between;
     align-items: center;
     padding: 1px 2px;
+    text-decoration: pink;
+        color: #000000;
 }
-.navigation-arrow .list-items {
+.navigation .list-items {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -64,10 +115,32 @@
 
 /* Links */
 
-.link {
-    text-decoration: pink;
-    color: #000000;
+a {
+    text-decoration: none;
 }
 
-/* Change color on hover */
+a:link {
+    color: pink;
+}
+
+a:visited {
+    color: #C71585;
+    /* Change color for visited links */
+}
+
+a:hover {
+    color: #FF69B4;
+    /* Change color on hover */
+}
+
+a:active {
+    color: #FF1493;
+    /* Change color when clicked */
+}
+
+a img{
+    height: 20px;
+    width:auto;
+}
+
 
