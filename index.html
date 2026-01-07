@@ -2,23 +2,58 @@
 
 <html lang="en">
     <head>
+        <link rel="icon" type="image/x-icon" href="/images/blackribbon.png" />
         <link rel="stylesheet" href="styles.css" />
-        <title>tini's page</title>
+        <title>Tini Le</title>
     </head>
     <body>
-        <div class="container">
-            <div class="cover">
-                <div class="heading">
-                    <h1>Tini <br />Ngo<br />Le</h1>
+        <!--magazine-->
+        <div class="magazine">
+            <!--cover-->
+            <div id="cover"> 
+                <div class="padd">
+                    <div class="heading">
+                        <h1>Tini <br />Ngo<br />Le</h1>
+                    </div>
+                    <nav class="navigation">
+                        <ul class="list-items">
+                            <a href="https://www.linkedin.com/in/tini-ngo-l-a620b434a/">
+                                <img src="images/linkedin-logo.png" alt="linkedin"/>
+                            </a>
+                            <a href="https://github.com/ttinyt">
+                                <img src="images/github-logo.png" alt="github"/>
+                            </a>
+                            <a href="#resume">Resume</a>
+                        </ul>
+                    </nav>
                 </div>
-                <nav class="navigation-arrow">
-                    <ul class="list-items">
-                        <a href="#linkedIn">LinkedIn</a>
-                        <a href="#github">GitHub</a>
-                        <a href="#next">next -></a>
-                    </ul>
-                </nav>
             </div>
+
+            <!--page 2-->
+            <div>
+                <div class="padd">
+                    <span class="text">Page 1</span>
+                </div>
+            </div>
+
+            <div>
+                <div class="padd">
+                    <span class="text">Page 2</span>
+                </div>
+            </div>
+
+            <div>
+                <div class="padd">
+                    <span class="text">Page 3</span>
+                </div>
+            </div>
+
         </div>
+
+        <script src="jquery.js"></script>
+        <script src="turn.js"></script>
+        <script>
+            $('.magazine').turn({ gradients: true, acceleration: true });
+        </script>
     </body>
 </html>
