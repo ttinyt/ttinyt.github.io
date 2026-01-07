@@ -25,9 +25,6 @@ body { /*magazine centering*/
     /*1* let pointer event go trough pages of lower Z than .magazine*/
 }
 
-/* .magazine .turn-page{
-    background-color: #ccc;
-} */
 
 .magazine #cover {
     position: relative;
@@ -37,26 +34,14 @@ body { /*magazine centering*/
     border: 1px solid #f7f7f7;
 }
 
-.magazine .page .padd {
-    padding: 20px;
-}
-
-/* 
-.magazine #cover :hover {
-    box-shadow: 0 8px 16px 10px rgba(0, 0, 0, 0.25);
-    transition: box-shadow 0.3s ease;
-    cursor: pointer;
-}  */
-
-
 
 /* pages */
 
 .magazine .page {
-    --thickness: 2;
+    --thickness: 3;
     display: flex;
-    /* flex-direction: column;
-    justify-content: center;
+    flex-direction: column;
+    /* justify-content: center;
     align-items: center; */
     width: 30em;
     height: 45em;
@@ -68,13 +53,14 @@ body { /*magazine centering*/
 
 .magazine .shadow,
 .magazine.shadow {
-    -webkit-box-shadow: 0 4px 10px #cccccc;
-    -moz-box-shadow: 0 4px 10px #cccccc;
-    -ms-box-shadow: 0 4px 10px #cccccc;
-    -o-box-shadow: 0 4px 10px #cccccc;
-    box-shadow: 0 4px 10px #cccccc;
+    box-shadow: 0.5px 4px 10px #cccccc;
 }
 /* 666 original color, 8c8c8c,  */
+
+.magazine .page .padd {
+    padding: 20px;
+}
+
 
 .heading {
     padding: 3px 5px 3px 3px;
